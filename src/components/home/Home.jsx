@@ -3,12 +3,12 @@ import Header from "../header/Header";
 import Tours from "../tours/Tours";
 import Footer from "../footer/Footer";
 
-function Home() {
+function Home({ data }) {
     return (
         <>
             <Header />
-            <Tours />
-            <Footer/>
+            <Tours data={data} />
+            <Footer />
         </>
     )
 }
