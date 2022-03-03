@@ -1,14 +1,14 @@
 /* eslint-disable array-callback-return */
-
+import Tour from "./tour/Tour";
+import "./Tours.css";
 function Tours({ data }) {
     return (
         <>
             {
-                data.map((city, index) => {
+                data.map((tour, key) => {
                     return (
-                        <div key={index}>
-                            <p>{city.name}</p>
-                            <img src={city.image} alt={city.image} />
+                        <div className="tours" key = {key}>
+                            <Tour tour={tour}/>
                         </div>
                     )
                 })
